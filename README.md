@@ -11,7 +11,7 @@ App that displays movies now running in theatres across the USA through browsing
 - [ ] Run app on a real device.
 
 ### App Walkthrough GIF
-<img src="https://media.giphy.com/media/KHQCzBb5jKccwM5qv1/giphy.gif" width=250><br>
+<img src="https://media.giphy.com/media/vC1A64j7hwYGIDWNet/giphy.gif" width=250><br>
 
 ### Notes
 Created this app with a lot of <3
