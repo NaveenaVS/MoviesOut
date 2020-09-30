@@ -39,7 +39,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
             //The dataDictionary variable is where we get the fetched data info -> dataDictionary is the thing that has the data
             
             //now i wanna print my fetched data in the form of json list:
-            print(dataDictionary) //ur movie the info from web into ur application.
+            //print(dataDictionary) //ur movie the info from web into ur application.
 
             //calling the result of the api we called earlier using the movies variable created above:
             //So essentially I wanna say, hey movies I want u to look in that dataDictionary and I want u to get out "results" -> this is how i access I access a particular key inside a dictionary
@@ -53,7 +53,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
               // TODO: Store the movies in a property to use elsewhere
               // TODO: Reload your table view data
 
-           }
+            }
         }
         task.resume()
     }
@@ -97,18 +97,36 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         //new function that can be applied cus we imported the AlamofireImage library
         cell.posterView.af_setImage(withURL: posterUrl!)
         
+        
         return cell
       }
       
 
-    /*
+    //this function is used to prepare next screen whe leaving ur screen -> data sending
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        //need this funct to do 2 tasks:
+        //a. find the selected movie
+        let cell = sender as! UITableViewCell //this is the cell tapped on
+        //ask table view what the indexpath is:
+        let indexPath = tableView.indexPath(for: cell)! // index path of the cell that was tapped on
+        let movie = movies[indexPath.row] //accessing the array
+        //now we need to store the movie we tapped on into the details view controller
+        
+        //b. pass the selected movie to the details viewController
+        let detailsViewContoller = segue.destination as! MovieDetailsViewController //casting to whatver thing exists after the "as !"
+        detailsViewContoller.movie = movie
+        
+        //to remove the selected highlight when we go back to the movies tab we need to manually deselect it:
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        
     }
-    */
+   
 
 }
