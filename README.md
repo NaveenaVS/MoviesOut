@@ -12,7 +12,7 @@ App that displays movies now running in theatres across the USA through browsing
 - [x] User can view the movie poster image for each movie.
 
 
-### App Walkthrough GIF sfter the phase 2 features:
+### App Walkthrough GIF after the phase 2 features:
 <img src="https://media.giphy.com/media/PLfnwIjB0yBJKJ79P1/giphy.gif" width=250><br>
 
 ### Notes
