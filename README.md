@@ -1,17 +1,19 @@
 # MoviesUp
 App that displays movies now running in theatres across the USA through browsing [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-#### Currently displayed features:
+## MoviesUp Phase 2
+### Phase 2 currently displayed features:
+- [x] User can tap a cell to see more details about a particular movie.
+- [x] User can tap a tab bar button to view a grid layout of Movie Posters using a CollectionView.
+
+#### Phase 1 features:
 - [x] User sees an app icon on the home screen and a styled launch screen.
 - [x] User can view and scroll through a list of movies now playing in theaters.
 - [x] User can view the movie poster image for each movie.
 
-#### Future features coming up:
-- [ ] User can view the app on various device sizes and orientations.
-- [ ] Run app on a real device.
 
-### App Walkthrough GIF
-<img src="https://media.giphy.com/media/vC1A64j7hwYGIDWNet/giphy.gif" width=250><br>
+### App Walkthrough GIF sfter the phase 2 features:
+<img src="https://media.giphy.com/media/PLfnwIjB0yBJKJ79P1/giphy.gif" width=250><br>
 
 ### Notes
 Created this app with a lot of <3
